@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الكتاب الرئيسي — $100/Day Business System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0E14; --bg-soft:#10141C; --surface:#151A24; --surface-2:#1B2130;
+    --border:#262E40; --gold:#D9A552; --gold-soft:#E8C079; --teal:#49BF8E;
+    --text:#EFEBE0; --text-dim:#9AA3B5; --text-faint:#616B80; --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:
+      radial-gradient(1100px 600px at 85% -10%, rgba(217,165,82,0.10), transparent 60%),
+      radial-gradient(900px 500px at -10% 20%, rgba(73,191,142,0.06), transparent 55%),
+      var(--bg);
+    color:var(--text); font-family:'Tajawal',sans-serif; line-height:1.85;
+    min-height:100vh; padding:56px 20px 100px;
+  }
+  .lat{font-family:'Space Grotesk',sans-serif; unicode-bidi:isolate; direction:ltr; display:inline-block;}
+  .wrap{max-width:760px; margin:0 auto;}
+
+  .back-link{
+    display:inline-flex; align-items:center; gap:6px;
+    color:var(--text-dim); font-size:13.5px; text-decoration:none;
+    margin-bottom:28px; border:1px solid var(--border); padding:7px 14px;
+    border-radius:999px; background:var(--surface);
+  }
+  .back-link:hover{color:var(--gold-soft); border-color:var(--gold);}
+
+  header{text-align:center; margin-bottom:50px;}
+  .badge-top{
+    display:inline-block; font-family:'Space Grotesk',sans-serif; font-size:12px;
+    letter-spacing:1.5px; color:var(--gold-soft); background:rgba(217,165,82,0.08);
+    border:1px solid rgba(217,165,82,0.35); padding:5px 14px; border-radius:999px;
+    margin-bottom:16px; text-transform:uppercase;
+  }
+  h1{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(26px,5vw,38px); margin-bottom:12px;}
+  h1 .accent{color:var(--gold);}
+  .sub{color:var(--text-dim); font-size:15.5px; max-width:520px; margin:0 auto;}
+
+  /* Table of contents */
+  .toc{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:22px 24px; margin:40px 0 60px;
+  }
+  .toc h2{font-size:13px; letter-spacing:1.5px; text-transform:uppercase; color:var(--text-faint); margin-bottom:14px;}
+  .toc ol{list-style:none; display:flex; flex-direction:column; gap:9px;}
+  .toc a{
+    display:flex; gap:10px; color:var(--text-dim); text-decoration:none; font-size:14.5px;
+  }
+  .toc a:hover{color:var(--gold-soft);}
+  .toc .n{font-family:'Space Grotesk',sans-serif; color:var(--gold-soft); font-weight:700; width:22px; flex-shrink:0;}
+
+  section.page{
+    margin-bottom:56px;
+    padding-bottom:56px;
+    border-bottom:1px dashed var(--border);
+  }
+  section.page:last-of-type{border-bottom:none;}
+  .page-eyebrow{
+    display:flex; align-items:center; gap:12px; margin-bottom:16px;
+  }
+  .page-num{
+    font-family:'Space Grotesk',sans-serif; font-size:13px; font-weight:700;
+    color:var(--gold-soft); background:var(--surface-2); border:1px solid var(--border);
+    width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  .page h2{font-size:21px; font-weight:700;}
+  .page p{color:var(--text-dim); font-size:15.5px; margin-bottom:14px;}
+  .page ul, .page ol.steps{
+    margin:14px 0 14px; padding-inline-start:20px; display:flex; flex-direction:column; gap:8px;
+  }
+  .page li{color:var(--text-dim); font-size:15px;}
+  .page strong{color:var(--text); font-weight:700;}
+
+  .callout{
+    background:rgba(73,191,142,0.06); border:1px solid rgba(73,191,142,0.25);
+    border-radius:10px; padding:14px 16px; margin-top:16px; font-size:14px; color:var(--text-dim);
+  }
+  .callout b{color:var(--teal);}
+
+  .footer-note{
+    margin-top:40px; text-align:center; padding:24px; background:var(--surface);
+    border:1px dashed var(--border); border-radius:var(--radius); color:var(--text-dim); font-size:14px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back-link" href="index.html">→ رجوع للصفحة الرئيسية</a>
+
+  <header>
+    <span class="badge-top">الكتاب الرئيسي</span>
+    <h1>ازاي تعمل <span class="accent lat">$100</span> في اليوم</h1>
+    <p class="sub">النظام كامل من الفكرة لحد أول $100 يومي ثابت — ١٠ أجزاء، كل جزء تقدر تطبقه فورًا.</p>
+  </header>
+
+  <div class="toc">
+    <h2>المحتوى</h2>
+    <ol>
+      <li><a href="#p1"><span class="n">01</span> نظرة عامة: إزاي النظام شغّال</a></li>
+      <li><a href="#p2"><span class="n">02</span> اختيار المنتج أو العرض</a></li>
+      <li><a href="#p3"><span class="n">03</span> بناء العرض (Offer) اللي يستاهل الفلوس</a></li>
+      <li><a href="#p4"><span class="n">04</span> صفحة الهبوط: العناصر الأساسية</a></li>
+      <li><a href="#p5"><span class="n">05</span> استقبال الطلبات والدفع</a></li>
+      <li><a href="#p6"><span class="n">06</span> جلب الزوار: مدفوع ومجاني</a></li>
+      <li><a href="#p7"><span class="n">07</span> الأرقام: معادلة الـ100$ يوميًا</a></li>
+      <li><a href="#p8"><span class="n">08</span> المتابعة والتحسين اليومي</a></li>
+      <li><a href="#p9"><span class="n">09</span> التوسع بعد أول 100$ ثابتة</a></li>
+      <li><a href="#p10"><span class="n">10</span> أخطاء تجنبها من أول يوم</a></li>
+    </ol>
+  </div>
+
+  <section class="page" id="p1">
+    <div class="page-eyebrow"><span class="page-num">01</span><h2>نظرة عامة: إزاي النظام شغّال</h2></div>
+    <p>النظام مبني على فكرة بسيطة: مش محتاج "فيروسية" ولا حظ عشان توصل لـ$100 في اليوم، محتاج معادلة ثابتة بتتكرر كل يوم: عرض واضح لناس محددة، طريقة توصله لهم، وطريقة تاخد فلوسهم وتوصله لهم. الثلاث حاجات دي هي كل اللي محتاجه، وكل حاجة زيادة عن كده تفاصيل بس.</p>
+    <p>هدف الكتاب مش يديك أفكار لا نهاية لها، هدفه يخليك تطبق نسخة واحدة كاملة من النظام من أول يوم، حتى لو بسيطة، وبعدين تحسّنها بالأرقام مش بالإحساس.</p>
+    <ul>
+      <li><strong>العرض:</strong> منتج أو خدمة أو منتج رقمي بيحل مشكلة واضحة لمجموعة ناس محددة.</li>
+      <li><strong>الوصول:</strong> إعلان أو محتوى بيوصل العرض ده للناس المهتمة.</li>
+      <li><strong>التحصيل:</strong> صفحة أو شات بيقفل البيع ويستقبل الفلوس.</li>
+    </ul>
+    <div class="callout"><b>الفكرة المحورية:</b> $100/يوم = عدد معين من عمليات بيع × سعر معين. لما تعرف الرقمين دول، النظام كله بيتحول لخطوات تنفيذ بس.</div>
+  </section>
+
+  <section class="page" id="p2">
+    <div class="page-eyebrow"><span class="page-num">02</span><h2>اختيار المنتج أو العرض</h2></div>
+    <p>أسهل منتج تبيعه هو اللي بيحل مشكلة موجودة فعلاً وبيتقال عنها كل يوم، مش مشكلة إنت مخترعها. ابدأ بسؤال: "الناس بتشتكي من إيه وبتدفع فلوس عشان تحله دلوقتي؟"</p>
+    <p>عندك 3 مسارات رئيسية تقدر تختار منهم:</p>
+    <ul>
+      <li><strong>منتج مادي:</strong> حاجة ملموسة (زي الشغل اللي إنت شغّاله في المجوهرات) — بيعتمد على هامش ربح كويس وشحن سريع.</li>
+      <li><strong>منتج رقمي:</strong> كورس، تمبلت، أو أداة — تكلفة التوزيع صفر تقريبًا، لكن محتاج تبني ثقة الأول.</li>
+      <li><strong>خدمة:</strong> شغل بتقدمه بوقتك أو بفريقك — أسرع مسار للفلوس لكن مش بيتوسع لوحده.</li>
+    </ul>
+    <p>مهما اخترت، اسأل نفسك 3 أسئلة قبل ما تكمل: مين بالظبط اللي هيشتري ده؟ هو بيدفع فيه فلوس دلوقتي لمين تاني؟ أنا هقدر أوصله له إزاي بأقل تكلفة؟</p>
+  </section>
+
+  <section class="page" id="p3">
+    <div class="page-eyebrow"><span class="page-num">03</span><h2>بناء العرض (Offer) اللي يستاهل الفلوس</h2></div>
+    <p>العرض مش هو المنتج بس، العرض هو "المنتج + طريقة تقديمه + سبب يشتري دلوقتي". نفس المنتج ممكن يتباع بصعوبة أو بسهولة حسب العرض حواليه.</p>
+    <p>عرض قوي بيتكون من:</p>
+    <ul>
+      <li><strong>وعد واضح:</strong> جملة واحدة تقول هو هيكسب إيه بالظبط.</li>
+      <li><strong>سبب تصدّق:</strong> إثبات، نتيجة، أو ضمان يخلي الوعد يبان حقيقي.</li>
+      <li><strong>سبب استعجال:</strong> عرض محدود، بونص، أو سعر مؤقت يخليه يقرر دلوقتي مش بكرة.</li>
+      <li><strong>سهولة قرار:</strong> سعر واضح، طريقة دفع سهلة، ومخاطرة قليلة عليه (زي ضمان استرجاع).</li>
+    </ul>
+    <div class="callout"><b>تمرين سريع:</b> اكتب عرضك في جملة واحدة بالصيغة دي: "بساعد [نوع الناس] يحققوا [النتيجة] من غير [العائق] عن طريق [المنتج/الخدمة]."</div>
+  </section>
+
+  <section class="page" id="p4">
+    <div class="page-eyebrow"><span class="page-num">04</span><h2>صفحة الهبوط: العناصر الأساسية</h2></div>
+    <p>صفحة الهبوط شغلها الوحيد إنها تاخد حد جاي من إعلان أو رابط وتوصله لقرار: يشتري أو يسيب بياناته. أي حاجة في الصفحة مش بتخدم القرار ده بتشتته.</p>
+    <ul>
+      <li><strong>عنوان رئيسي:</strong> بيقول النتيجة اللي هيحصل عليها في ثانيتين قراءة.</li>
+      <li><strong>صورة/فيديو للمنتج:</strong> وضوح المنتج نفسه، مش تصميم مبالغ فيه.</li>
+      <li><strong>3 لحد 5 نقط فايدة:</strong> مش مواصفات، فايدة حقيقية للعميل.</li>
+      <li><strong>دليل ثقة:</strong> تقييمات، صور عملاء حقيقيين، أو رقم مبيعات.</li>
+      <li><strong>السعر ونداء واضح للفعل:</strong> زرار واحد واضح، مش زرارين بيشتتوا القرار.</li>
+    </ul>
+    <p>خليك حذر من صفحة فيها كل حاجة "ممكن تفيد" — كل عنصر إضافي هو فرصة إضافية إن الزائر يتشتت ويمشي من غير قرار.</p>
+  </section>
+
+  <section class="page" id="p5">
+    <div class="page-eyebrow"><span class="page-num">05</span><h2>استقبال الطلبات والدفع</h2></div>
+    <p>أكبر سبب لخسارة عملاء جاهزين يدفعوا هو إن طريقة الدفع معقدة أو مش واضحة. اخلي المسار من "عايز أشتري" لحد "دفعت" أقصر ما يمكن.</p>
+    <ul>
+      <li><strong>خيارات دفع محلية مألوفة:</strong> فودافون كاش، إنستاباي، أو الدفع عند الاستلام حسب طبيعة المنتج.</li>
+      <li><strong>تأكيد فوري:</strong> رسالة أو صفحة "تم استلام طلبك" فور الدفع، حتى لو التفعيل بيتم يدويًا بعد كده.</li>
+      <li><strong>قناة واحدة للمتابعة:</strong> واتساب غالبًا أنسب حاجة في السوق المصري، لأن العميل مرتاح يتكلم فيها ويبعت إثبات دفع.</li>
+    </ul>
+    <div class="callout"><b>ملاحظة:</b> في البداية، النظام اليدوي (العميل يبعت إثبات دفع وإنت تأكد وتفعّل) أسرع وأرخص من بناء نظام دفع أوتوماتيكي كامل. أتمتة الخطوة دي تيجي بعد ما يثبت العرض نفسه إنه بيبيع.</div>
+  </section>
+
+  <section class="page" id="p6">
+    <div class="page-eyebrow"><span class="page-num">06</span><h2>جلب الزوار: مدفوع ومجاني</h2></div>
+    <p>مفيش عرض حلو من غير ناس تشوفه. عندك مسارين متكاملين مش بديلين عن بعض:</p>
+    <ul>
+      <li><strong>إعلانات مدفوعة (Meta Ads غالبًا):</strong> أسرع طريقة تجيب زوار مستهدفين، وبتديك بيانات واضحة عن الجمهور اللي بيتفاعل وبيشتري.</li>
+      <li><strong>محتوى مجاني:</strong> فيديوهات قصيرة، بوستات، أو محتوى تعليمي بيبني ثقة على المدى الطويل ويقلل اعتمادك الكامل على الإعلانات.</li>
+    </ul>
+    <p>في البداية، ابدأ بميزانية إعلانية صغيرة وثابتة على عرض واحد بس، وراقب رقمين بس: تكلفة الوصول للعميل المهتم، ونسبة اللي بيحولوا فعلاً لعميل دافع. متتوسعش في الإنفاق قبل ما الرقمين دول يبانوا مستقرين.</p>
+  </section>
+
+  <section class="page" id="p7">
+    <div class="page-eyebrow"><span class="page-num">07</span><h2>الأرقام: معادلة الـ<span class="lat">$100</span> يوميًا</h2></div>
+    <p>المعادلة الكاملة بسيطة، لكن لازم تحسبها بنفسك على منتجك بالظبط:</p>
+    <ul>
+      <li><strong>عدد المبيعات المطلوبة يوميًا</strong> = 100 ÷ صافي ربحك من كل عملية بيع.</li>
+      <li><strong>عدد الزوار المطلوبين</strong> = عدد المبيعات المطلوبة ÷ نسبة التحويل المتوقعة.</li>
+      <li><strong>الميزانية الإعلانية التقريبية</strong> = عدد الزوار × تكلفة الزائر الواحد.</li>
+    </ul>
+    <p>مثال بسيط: لو صافي ربحك من كل عملية بيع 50 جنيه، محتاج حوالي 8-10 عمليات بيع يوميًا (حسب سعر الدولار وقتها). لو نسبة التحويل عندك 2%، يبقى محتاج حوالي 400-500 زائر مهتم يوميًا. الرقم ده هو اللي بيوجّهك تخطط الميزانية الإعلانية بيه، مش تخمين عشوائي.</p>
+    <div class="callout"><b>استخدم أداة الحاسبة</b> اللي في الصفحة الرئيسية (Business Calculator) عشان تحط أرقامك الحقيقية بدل الأمثلة دي وتشوف احتياجك الفعلي.</div>
+  </section>
+
+  <section class="page" id="p8">
+    <div class="page-eyebrow"><span class="page-num">08</span><h2>المتابعة والتحسين اليومي</h2></div>
+    <p>النظام مش "اتنفذ مرة وخلاص"، هو دورة يومية بسيطة بتتكرر وبتتحسن. كل يوم اسأل نفسك 3 أسئلة بس:</p>
+    <ol class="steps">
+      <li>كام زائر جاني، وكام واحد فيهم حوّل لعميل دافع؟</li>
+      <li>إيه أضعف نقطة في المسار (الإعلان، الصفحة، ولا التحصيل)؟</li>
+      <li>إيه تجربة واحدة صغيرة أقدر أعملها بكرة عشان أحسّن النقطة دي؟</li>
+    </ol>
+    <p>التحسين بيبقى فعّال لما يكون على حاجة واحدة في المرة، مش تغيير كل حاجة مرة واحدة وإنت مش عارف إيه اللي فرق فعلاً.</p>
+  </section>
+
+  <section class="page" id="p9">
+    <div class="page-eyebrow"><span class="page-num">09</span><h2>التوسع بعد أول 100$ ثابتة</h2></div>
+    <p>لما توصل لـ$100/يوم بشكل ثابت لمدة أسبوعين على الأقل، بس وقتها فكّر في التوسع، مش قبل كده. التوسع بيكون في اتجاه واحد من التلاتة دول:</p>
+    <ul>
+      <li><strong>زود الميزانية الإعلانية</strong> تدريجيًا على نفس العرض اللي أثبت نجاحه.</li>
+      <li><strong>ضيف عرض تاني</strong> لنفس الجمهور (Upsell أو منتج مكمّل).</li>
+      <li><strong>افتح قناة وصول جديدة</strong> (منصة إعلانية تانية أو نوع محتوى جديد).</li>
+    </ul>
+    <p>خليك حذر من إنك توسع في التلاتة اتجاهات مع بعض — ده بيشتت الميزانية والتركيز، وبيصعّب عليك تعرف إيه اللي بيشتغل فعلاً.</p>
+  </section>
+
+  <section class="page" id="p10">
+    <div class="page-eyebrow"><span class="page-num">10</span><h2>أخطاء تجنبها من أول يوم</h2></div>
+    <ul>
+      <li><strong>تشتيت المنتجات:</strong> تحاول تبيع أكتر من عرض واحد في نفس الوقت قبل ما أي عرض يثبت نفسه.</li>
+      <li><strong>صفحة معقدة:</strong> ألوان كتير، معلومات زيادة، وأكتر من نداء واحد للفعل.</li>
+      <li><strong>إهمال المتابعة اليومية:</strong> تشغّل إعلان وتسيبه من غير ما تراجع الأرقام يوميًا.</li>
+      <li><strong>الحكم بسرعة:</strong> توقف عرض بعد يوم أو يومين من غير ما تدّيه فرصة بيانات كافية.</li>
+      <li><strong>تعقيد الدفع:</strong> طرق دفع كتير ومربكة بدل مسار واحد واضح وسهل.</li>
+    </ul>
+    <div class="callout"><b>الخلاصة:</b> النظام بسيط في جوهره: عرض واحد واضح، مسار وصول واحد، وطريقة تحصيل واحدة سهلة — وبعدين تكرار وتحسين يومي. البساطة هنا مش نقص، هي الميزة.</div>
+  </section>
+
+  <div class="footer-note">
+    كمّل باقي أجزاء النظام: خطة الـ٨ ساعات، تحدي الـ٧ أيام، والأدوات المساعدة — كلهم في <a href="index.html" style="color:var(--gold-soft);">الصفحة الرئيسية</a>.
+  </div>
+
+</div>
+</body>
+</html>

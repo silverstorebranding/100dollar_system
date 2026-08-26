@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>قوالب جاهزة — $100/Day Business System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0E14; --surface:#151A24; --surface-2:#1B2130; --border:#262E40;
+    --gold:#D9A552; --gold-soft:#E8C079; --teal:#49BF8E;
+    --text:#EFEBE0; --text-dim:#9AA3B5; --text-faint:#616B80; --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:radial-gradient(1100px 600px at 85% -10%, rgba(217,165,82,0.10), transparent 60%), var(--bg);
+    color:var(--text); font-family:'Tajawal',sans-serif; line-height:1.8; padding:56px 20px 100px;
+  }
+  .lat{font-family:'Space Grotesk',sans-serif; unicode-bidi:isolate; direction:ltr; display:inline-block;}
+  .wrap{max-width:720px; margin:0 auto;}
+  .back-link{
+    display:inline-flex; align-items:center; gap:6px; color:var(--text-dim); font-size:13.5px;
+    text-decoration:none; margin-bottom:28px; border:1px solid var(--border); padding:7px 14px;
+    border-radius:999px; background:var(--surface);
+  }
+  .back-link:hover{color:var(--gold-soft); border-color:var(--gold);}
+  header{text-align:center; margin-bottom:44px;}
+  .badge-top{
+    display:inline-block; font-family:'Space Grotesk',sans-serif; font-size:12px; letter-spacing:1.5px;
+    color:var(--gold-soft); background:rgba(217,165,82,0.08); border:1px solid rgba(217,165,82,0.35);
+    padding:5px 14px; border-radius:999px; margin-bottom:16px; text-transform:uppercase;
+  }
+  h1{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(24px,5vw,34px); margin-bottom:10px;}
+  .sub{color:var(--text-dim); font-size:15px; max-width:480px; margin:0 auto;}
+
+  .tpl{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:22px 24px; margin-bottom:18px;
+  }
+  .tpl-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;}
+  .tpl-top h2{font-size:16.5px;}
+  .badge{
+    font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:600; letter-spacing:0.5px;
+    padding:3px 9px; border-radius:6px; background:var(--surface-2); border:1px solid var(--border);
+    color:var(--text-faint);
+  }
+  .tpl-body{
+    background:var(--surface-2); border:1px solid var(--border); border-radius:9px;
+    padding:14px 16px; font-size:13.5px; color:var(--text-dim); white-space:pre-line;
+  }
+  .copy-btn{
+    background:transparent; border:1px solid var(--border); color:var(--text-dim);
+    font-family:'Tajawal',sans-serif; font-size:12px; padding:6px 12px; border-radius:6px;
+    cursor:pointer; margin-top:10px;
+  }
+  .copy-btn:hover{border-color:var(--gold); color:var(--gold-soft);}
+
+  .footer-note{
+    margin-top:40px; text-align:center; padding:22px; background:var(--surface);
+    border:1px dashed var(--border); border-radius:var(--radius); color:var(--text-dim); font-size:14px;
+  }
+  .footer-note a{color:var(--gold-soft);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back-link" href="index.html">→ رجوع للصفحة الرئيسية</a>
+  <header>
+    <span class="badge-top">أداة مساعدة</span>
+    <h1>قوالب جاهزة</h1>
+    <p class="sub">هيكل جاهز لكل حاجة محتاجها — انسخ واملأ الفراغات بمعلومات منتجك.</p>
+  </header>
+
+  <div class="tpl">
+    <div class="tpl-top"><h2>هيكل صفحة الهبوط (Landing Page)</h2><span class="badge lat">Structure</span></div>
+    <div class="tpl-body" id="t1">العنوان الرئيسي: [النتيجة اللي هيحصل عليها العميل في جملة واحدة]
+صورة/فيديو المنتج
+
+3 لحد 5 نقط فايدة:
+- [فايدة 1]
+- [فايدة 2]
+- [فايدة 3]
+
+دليل ثقة: [تقييمات / صور عملاء / عدد المبيعات]
+
+السعر: [السعر] + [أي بونص إضافي]
+زرار: [اطلب الآن / احجز مكانك]
+
+معلومات التواصل: [رقم واتساب / صفحة فيسبوك]</div>
+    <button class="copy-btn" onclick="copyTpl('t1', this)">نسخ القالب</button>
+  </div>
+
+  <div class="tpl">
+    <div class="tpl-top"><h2>هيكل العرض (Offer Template)</h2><span class="badge lat">Structure</span></div>
+    <div class="tpl-body" id="t2">بساعد [نوع الجمهور] يحقق [النتيجة المطلوبة]
+من غير [العائق أو المشكلة الشائعة]
+عن طريق [اسم المنتج/الخدمة]
+
+سبب تصدّق: [إثبات / نتيجة / ضمان]
+سبب تستعجل: [عرض محدود / بونص / سعر مؤقت]
+سهولة القرار: [ضمان استرجاع / سعر واضح / دفع سهل]</div>
+    <button class="copy-btn" onclick="copyTpl('t2', this)">نسخ القالب</button>
+  </div>
+
+  <div class="tpl">
+    <div class="tpl-top"><h2>أسئلة بحث العملاء (Customer Research)</h2><span class="badge lat">Questions</span></div>
+    <div class="tpl-body" id="t3">1. إيه أكتر حاجة بتضايقك في [المشكلة/المجال]؟
+2. جربت تحل المشكلة دي إزاي قبل كده؟
+3. إيه اللي منعك تكمل مع الحل اللي جربته؟
+4. لو فيه حل مثالي، هيكون شكله إيه بالظبط؟
+5. أنت مستعد تدفع كام شهريًا/مرة واحدة عشان تحل المشكلة دي؟</div>
+    <button class="copy-btn" onclick="copyTpl('t3', this)">نسخ القالب</button>
+  </div>
+
+  <div class="tpl">
+    <div class="tpl-top"><h2>رسالة بيع (Sales Message)</h2><span class="badge lat">Template</span></div>
+    <div class="tpl-body" id="t4">أهلاً [اسم العميل] 👋
+
+شكراً لاهتمامك بـ[اسم المنتج].
+
+[جملة توضح الفايدة الرئيسية في سطر واحد]
+
+السعر: [السعر]
+متاح: [الكمية/التوقيت لو محدود]
+
+عايز تأكد الطلب دلوقتي؟ ابعتلي:
+- الاسم
+- رقم التليفون
+- العنوان (لو المنتج محتاج شحن)</div>
+    <button class="copy-btn" onclick="copyTpl('t4', this)">نسخ القالب</button>
+  </div>
+
+  <div class="tpl">
+    <div class="tpl-top"><h2>نص إعلان (Ad Copy)</h2><span class="badge lat">Template</span></div>
+    <div class="tpl-body" id="t5">[سؤال أو جملة توقف السكرول متعلقة بمشكلة الجمهور]
+
+لو بتعاني من [المشكلة]، [اسم المنتج] هيساعدك تحل ده من غير [العائق].
+
+✔ [فايدة 1]
+✔ [فايدة 2]
+✔ [فايدة 3]
+
+السعر دلوقتي: [السعر] بدل [السعر الأصلي لو في خصم]
+
+اطلب دلوقتي 👇
+[رابط صفحة الهبوط]</div>
+    <button class="copy-btn" onclick="copyTpl('t5', this)">نسخ القالب</button>
+  </div>
+
+  <div class="tpl">
+    <div class="tpl-top"><h2>هيكل خطة عمل مبسطة (Business Plan)</h2><span class="badge lat">Structure</span></div>
+    <div class="tpl-body" id="t6">المنتج/الخدمة: [الوصف في سطرين]
+الجمهور المستهدف: [مين بالظبط]
+السعر وهامش الربح: [السعر] / [الربح الصافي لكل عملية بيع]
+
+قناة الوصول الأساسية: [إعلانات مدفوعة / محتوى / الاتنين]
+الميزانية اليومية المبدئية: [المبلغ]
+
+هدف الأسبوع الأول: [عدد المبيعات المستهدف]
+أهم مؤشر هراقبه يوميًا: [نسبة التحويل / تكلفة الزائر / صافي الربح]</div>
+    <button class="copy-btn" onclick="copyTpl('t6', this)">نسخ القالب</button>
+  </div>
+
+  <div class="footer-note">
+    جهّزت القوالب؟ ارجع للكتاب الرئيسي عشان تطبقهم بالترتيب الصح — <a href="playbook.html">من هنا</a>.
+  </div>
+</div>
+
+<script>
+  function copyTpl(id, btn){
+    const text = document.getElementById(id).textContent.trim();
+    navigator.clipboard.writeText(text).then(function(){
+      const original = btn.textContent;
+      btn.textContent = 'اتنسخ ✓';
+      setTimeout(function(){ btn.textContent = original; }, 1500);
+    });
+  }
+</script>
+</body>
+</html>

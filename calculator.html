@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Calculator — $100/Day Business System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0E14; --surface:#151A24; --surface-2:#1B2130; --border:#262E40;
+    --gold:#D9A552; --gold-soft:#E8C079; --teal:#49BF8E;
+    --text:#EFEBE0; --text-dim:#9AA3B5; --text-faint:#616B80; --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:radial-gradient(1100px 600px at 85% -10%, rgba(217,165,82,0.10), transparent 60%), var(--bg);
+    color:var(--text); font-family:'Tajawal',sans-serif; line-height:1.8; padding:56px 20px 100px;
+  }
+  .lat{font-family:'Space Grotesk',sans-serif; unicode-bidi:isolate; direction:ltr; display:inline-block;}
+  .wrap{max-width:560px; margin:0 auto;}
+  .back-link{
+    display:inline-flex; align-items:center; gap:6px; color:var(--text-dim); font-size:13.5px;
+    text-decoration:none; margin-bottom:28px; border:1px solid var(--border); padding:7px 14px;
+    border-radius:999px; background:var(--surface);
+  }
+  .back-link:hover{color:var(--gold-soft); border-color:var(--gold);}
+  header{text-align:center; margin-bottom:36px;}
+  .badge-top{
+    display:inline-block; font-family:'Space Grotesk',sans-serif; font-size:12px; letter-spacing:1.5px;
+    color:var(--gold-soft); background:rgba(217,165,82,0.08); border:1px solid rgba(217,165,82,0.35);
+    padding:5px 14px; border-radius:999px; margin-bottom:16px; text-transform:uppercase;
+  }
+  h1{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(24px,5vw,32px); margin-bottom:10px;}
+  .sub{color:var(--text-dim); font-size:15px;}
+
+  .calc-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:26px 24px;
+  }
+  .field{margin-bottom:18px;}
+  .field label{
+    display:block; font-size:13.5px; color:var(--text-dim); margin-bottom:7px;
+  }
+  .field .row{
+    display:flex; align-items:center; gap:8px;
+    background:var(--surface-2); border:1px solid var(--border); border-radius:9px; padding:11px 14px;
+  }
+  .field input{
+    flex:1; background:transparent; border:none; outline:none; color:var(--text);
+    font-family:'Space Grotesk',sans-serif; font-size:16px; direction:ltr; text-align:left;
+  }
+  .field .unit{color:var(--text-faint); font-size:13px; font-family:'Space Grotesk',sans-serif;}
+
+  .results{
+    margin-top:24px; padding-top:22px; border-top:1px dashed var(--border);
+    display:flex; flex-direction:column; gap:14px;
+  }
+  .result-row{
+    display:flex; justify-content:space-between; align-items:center;
+    background:rgba(217,165,82,0.06); border:1px solid rgba(217,165,82,0.25);
+    border-radius:10px; padding:14px 16px;
+  }
+  .result-row.highlight{
+    background:rgba(73,191,142,0.08); border-color:rgba(73,191,142,0.3);
+  }
+  .result-label{font-size:13.5px; color:var(--text-dim);}
+  .result-value{
+    font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px; color:var(--gold-soft);
+  }
+  .result-row.highlight .result-value{color:var(--teal);}
+
+  .note{
+    margin-top:16px; font-size:12.5px; color:var(--text-faint); text-align:center;
+  }
+
+  .footer-note{
+    margin-top:36px; text-align:center; padding:22px; background:var(--surface);
+    border:1px dashed var(--border); border-radius:var(--radius); color:var(--text-dim); font-size:14px;
+  }
+  .footer-note a{color:var(--gold-soft);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back-link" href="index.html">→ رجوع للصفحة الرئيسية</a>
+  <header>
+    <span class="badge-top">أداة مساعدة</span>
+    <h1>Business Calculator</h1>
+    <p class="sub">حط أرقامك الحقيقية واعرف محتاج كام زائر ومبيعة عشان توصل لـ<span class="lat">$100</span> في اليوم.</p>
+  </header>
+
+  <div class="calc-card">
+    <div class="field">
+      <label>سعر بيع المنتج</label>
+      <div class="row">
+        <input type="number" id="price" value="500" min="0" oninput="calc()">
+        <span class="unit lat">EGP</span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>صافي ربحك من كل عملية بيع (بعد التكلفة والشحن)</label>
+      <div class="row">
+        <input type="number" id="profit" value="150" min="0" oninput="calc()">
+        <span class="unit lat">EGP</span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>نسبة التحويل المتوقعة (من كل زائر لعميل دافع)</label>
+      <div class="row">
+        <input type="number" id="conversion" value="2" min="0.1" step="0.1" oninput="calc()">
+        <span class="unit lat">%</span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>تكلفة الزائر الواحد (متوسط تكلفة النقرة/الوصول)</label>
+      <div class="row">
+        <input type="number" id="cpv" value="2" min="0" step="0.1" oninput="calc()">
+        <span class="unit lat">EGP</span>
+      </div>
+    </div>
+
+    <div class="results">
+      <div class="result-row">
+        <span class="result-label">سعر الدولار المستخدم في الحساب</span>
+        <span class="result-value" id="fxRate">≈ 49</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">عمليات البيع المطلوبة يوميًا</span>
+        <span class="result-value" id="salesNeeded">—</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">الزوار المطلوبين يوميًا</span>
+        <span class="result-value" id="visitsNeeded">—</span>
+      </div>
+      <div class="result-row highlight">
+        <span class="result-label">الميزانية الإعلانية التقريبية يوميًا</span>
+        <span class="result-value" id="budgetNeeded">—</span>
+      </div>
+    </div>
+
+    <p class="note">الحساب تقريبي لمساعدتك على التخطيط، مش نصيحة مالية. الأرقام الحقيقية بتختلف حسب المنتج والجمهور.</p>
+  </div>
+
+  <div class="footer-note">
+    عايز برومبتات جاهزة تساعدك تحسّن الأرقام دي؟ <a href="prompt-pack.html">افتح AI Prompt Pack</a>.
+  </div>
+</div>
+
+<script>
+  const FX_RATE = 49; // تقريبي — عدّله حسب سعر الدولار الحالي
+
+  function calc(){
+    const profit = parseFloat(document.getElementById('profit').value) || 0;
+    const conversion = parseFloat(document.getElementById('conversion').value) || 0;
+    const cpv = parseFloat(document.getElementById('cpv').value) || 0;
+
+    document.getElementById('fxRate').textContent = '≈ ' + FX_RATE;
+
+    if(profit <= 0 || conversion <= 0){
+      document.getElementById('salesNeeded').textContent = '—';
+      document.getElementById('visitsNeeded').textContent = '—';
+      document.getElementById('budgetNeeded').textContent = '—';
+      return;
+    }
+
+    const dailyTargetEGP = 100 * FX_RATE;
+    const salesNeeded = dailyTargetEGP / profit;
+    const visitsNeeded = salesNeeded / (conversion / 100);
+    const budgetNeeded = visitsNeeded * cpv;
+
+    document.getElementById('salesNeeded').textContent = Math.ceil(salesNeeded) + ' عملية بيع';
+    document.getElementById('visitsNeeded').textContent = Math.ceil(visitsNeeded) + ' زائر';
+    document.getElementById('budgetNeeded').textContent = Math.round(budgetNeeded) + ' EGP';
+  }
+
+  calc();
+</script>
+</body>
+</html>
